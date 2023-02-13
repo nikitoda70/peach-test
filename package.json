@@ -1,6 +1,9 @@
 {
   "name": "peach-test",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/nikitoda70/peach-test.git"
+  },
   "description": "Test task for Peach",
   "main": "index.js",
   "private": true,
@@ -9,7 +12,8 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
     "server-dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
-    "server-build": "cross-env NODE_ENV=production webpack-dev-server --mode production --open"
+    "server-build": "cross-env NODE_ENV=production webpack-dev-server --mode production --open",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +23,7 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.2",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.0",
