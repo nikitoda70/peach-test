@@ -64,6 +64,12 @@
       height: 42px;
     }
 
+    &--prev {
+      > svg {
+        transform: scaleX(1);
+      }
+    }
+
     &--next {
       margin-left: 20px;
 
@@ -79,15 +85,10 @@
         transform: rotate(180deg);
       }
     }
-  }
 
-  &__icon {
-    width: 10px;
-    height: 20px;
-
-    @media (max-width: $lg) {
-      width: 9px;
-      height: 18px;
+    > svg {
+      width: 10px;
+      height: 20px;
     }
   }
 
