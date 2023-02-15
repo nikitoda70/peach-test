@@ -1,5 +1,6 @@
 .map {
   padding: 20px 0 100px;
+  position: relative;
 
   @media (max-width: $xl) {
     padding: 15px 0 80px;
@@ -11,6 +12,13 @@
 
   @media (max-width: $md) {
     padding: 26px 0 50px;
+  }
+
+  &--opened {
+    .map__tabs-button,
+    .map__wrapper {
+      opacity: .3;
+    }
   }
 
   &__control {
@@ -60,6 +68,7 @@
       line-height: 1;
       font-weight: 600;
       font-size: 24px;
+      opacity: 1;
 
       @media (max-width: $xl) {
         font-size: 22px;
@@ -157,13 +166,28 @@
   }
 
   &__wrapper {
-    padding: 0 30px;
+    margin: 0 30px;
     overflow-x: auto;
     overflow-y: hidden;
+    position: relative;
 
     @media (max-width: $md) {
-      padding: 0 0 0 5px;
+      margin: 0 0 0 5px;
     }
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    isolation: isolate;
+    z-index: -1;
+    width: 100%;
+    min-width: 862px;
   }
 
   &__img {
