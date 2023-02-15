@@ -1,3 +1,1 @@
-<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 1.98169L11 10.0028L1 1.98169" stroke="#444444" stroke-width="3"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="dropdown-arrow" width="22" height="12" fill="none"><path stroke="#444" stroke-width="3" d="m21 1.982-10 8.02-10-8.02"/></svg>
